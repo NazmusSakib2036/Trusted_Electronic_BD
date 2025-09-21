@@ -1,13 +1,10 @@
-// src/pages/ProductView.js
 import React, { useContext, useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import '../assets/css/product-view.css';
 
-// Helper function to get YouTube thumbnail
 const getYouTubeThumbnail = (url) => {
   if (!url) return null;
-  // Extract video ID from common YouTube URL formats
   const regex = /(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|watch\?v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
   const match = url.match(regex);
   const videoId = match ? match[1] : null;
