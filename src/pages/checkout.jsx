@@ -135,10 +135,10 @@ const Checkout = () => {
                 <input type="text" id="phone" placeholder="8801313********" value={formData.phone} onChange={handleInputChange} required />
               </div>
             </div>
-            <div className="form-group">
+            {/* <div className="form-group">
               <label htmlFor="email">Email</label>
               <input type="email" id="email" placeholder="example@gmail.com" value={formData.email} onChange={handleInputChange} required />
-            </div>
+            </div> */}
             <p className="section-subtitle">Your address</p>
             <div className="form-group">
               <label htmlFor="address">Address</label>
